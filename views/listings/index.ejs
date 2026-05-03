@@ -1,0 +1,39 @@
+<% layout("layout/boilerplate.ejs") %>
+<body>
+    <br>
+    <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Our Most Popular Trips !</h3>
+    <br>
+    
+
+    <!-- FIXED ROUTE
+    <a href="/listings/new">Create New Listing</a> -->
+    <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+
+    <% for(let listing of allListings){ %>
+        <a href="/listings/<%= listing._id %> " class="listing-link">
+    <div class="card" >
+    <img src="<%= listing.image.url %>" class="card-img-top" alt='listingimage' style="height: 20rem;">
+    <div class="card-body">
+        <p class="card-text">
+            <b><%= listing.title %></b><br>
+            &#8377;<%= listing.price.toLocaleString("en-IN") %> /night
+        </p>
+    </div>
+    </div>
+    <% } %>
+    </div>
+
+    <!-- <ul>
+        <% for(let listing of allListings){ %>
+            <li>
+                <a href="/listings/<%= listing._id %>">
+                    <%= listing.title %>
+                </a>
+
+                
+            </li>
+        <% } %>
+    </ul> -->
+    
+</body>
+

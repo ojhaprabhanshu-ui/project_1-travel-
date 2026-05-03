@@ -1,0 +1,85 @@
+body{background-color:rgb(206, 206, 217);
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+.f-infosocials{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    color: black !important;
+
+
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    
+
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 6rem;
+    align-items:center;
+    background-color:rgb(250, 250, 242);
+}
+/*cards*/
+.card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-text:hover{
+text-decoration: underline;
+color: black;
+}
+
+.listing-link{
+text-decoration: none;
+}
+.add-btn{
+    background-color: rgb(225, 59, 59) !important;
+    border: none !important;
+
+}
+.show-img{
+    height: 30vh;
+}
+.back-btn{
+    background-color:rgb(17, 228, 17) !important ;
+}
+.edit-btn{
+    background-color: rgb(29, 218, 218) !important;
+}
